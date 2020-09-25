@@ -1,0 +1,16 @@
+{
+  "name": "froot-wrapper",
+  "version": "1.0.0",
+  "description": "A Node.js wrapper for Bots Para Discord",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "deploy": "npm publish --access public"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "@types/node": "^14.11.2"
+  },
+  "author": "MysteryMS",
+  "license": "ISC"
+}

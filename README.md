@@ -1,5 +1,5 @@
 # Froot Wrapper
- Froot Wrapper is the official Node.JS wrapper for Bots Para Discord.
+ Froot Wrapper is the official Node.js wrapper for Bots Para Discord.
 
 ### Installation
 ``

@@ -11,7 +11,7 @@ export default interface Bot {
     owner: string
     /** The bot avatar */
     avatar?: string
-    /** The bot status. Either 'online', 'away', 'dnd' or 'offline' */
+    /** The bot status. Either 'online', 'away', 'dnd', 'streaming' or 'offline' */
     status: string
     /** Dates related to the account */
     dates: object

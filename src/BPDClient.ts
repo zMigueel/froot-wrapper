@@ -49,7 +49,7 @@ export default class BPDClient {
      * @param userId The user ID to get the list
      * @returns An array with the user's bots
      */
-    public getUserBots(userId: string) {
+    public getUserBots(userId: string): Promise<Bot[]> {
         return new Promise(async (resolve, reject) => {
             if (!userId) reject("Missing user ID")
             try {

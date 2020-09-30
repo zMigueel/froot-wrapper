@@ -4,15 +4,13 @@ import Bot from "./interfaces/Bot";
 
 
 export default class BPDClient {
-    private API_URL = 'https://zuraaa.com/api'
-    public constructor() {
-    }
+    private static API_URL = 'https://zuraaa.com/api'
     /**
      * Retrieves a user
      * @param id The user ID
      * @returns The user object
      */
-    public getUser(id: string): Promise<User> {
+    public static getUser(id: string): Promise<User> {
         return new Promise(async (resolve, reject) => {
             if (!id) reject("Missing user ID")
             try {
@@ -32,7 +30,7 @@ export default class BPDClient {
      * @param id bot ID
      * @returns The bot object
      */
-    public getBot(id: string): Promise<Bot> {
+    public static getBot(id: string): Promise<Bot> {
         return new Promise(async (resolve, reject) => {
             if (!id) reject("Missing bot ID")
             try {
@@ -49,7 +47,7 @@ export default class BPDClient {
      * @param userId The user ID to get the list
      * @returns An array with the user's bots
      */
-    public getUserBots(userId: string): Promise<Bot[]> {
+    public static getUserBots(userId: string): Promise<Bot[]> {
         return new Promise(async (resolve, reject) => {
             if (!userId) reject("Missing user ID")
             try {
@@ -61,4 +59,3 @@ export default class BPDClient {
         })
     }
 }
-
